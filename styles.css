@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.limit-box {
+  position: relative; /* Importante para definir o box como container relativo */
+  width: 600px;
+  height: 600px;
+  border: 2px solid #000;
+  overflow: hidden; /* Garante que o box não ultrapasse os limites do limit-box */
+}
+
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  border: 2px solid #000;
+  cursor: move;
+}
+
+.left { margin-top: 50%; margin-left: -8px; }
